@@ -1,0 +1,16 @@
+input.ng-invalid{
+    background-color: red;
+}
+
+
+input.ng-dirty{
+    background-color: #8a6d3b;
+}
+
+input.ng-touched {
+    background-color: #5bc0de;
+}
+
+input.ng-error {
+    background-color: #4cae4c;
+}

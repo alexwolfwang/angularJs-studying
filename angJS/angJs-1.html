@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tutorial</title>
+    <link rel="stylesheet" href="css/angJS-1.css">
+</head>
+<body>
+    <!--<div ng-app="">-->
+        <!--<p>name: <input type="text" ng-model="name"></p>-->
+        <!--<h1>hello {{name}}</h1>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<p>First: <input type="text" ng-model="first"></p>-->
+        <!--<p>Last: <span ng-bind="last"></span> </p>-->
+        <!--<p>name: {{first +" "+ last}}</p>-->
+    <!--</div>-->
+
+
+
+    <!--chapter 3-->
+
+
+
+    <!--<div ng-app="" ng-init="a=4;b=2">-->
+        <!--{{a * b}}-->
+        <!--<p><span ng-bind="a * b"></span> </p>-->
+    <!--</div>-->
+
+    <!--<div  ng-app="" ng-init="first='alex'; last='wang'">-->
+        <!--<p>name: {{first + "" + last}}</p>-->
+    <!--</div>-->
+
+    <!--<div ng-app="" ng-init="person={f:'alex',last:'wang'}">-->
+        <!--<p>{{person.last + person.f}}</p>-->
+    <!--</div>-->
+
+    <!--<div ng-app="" ng-init="arr=['a','b','c','d']">-->
+        <!--<p>{{arr[2]}}</p>-->
+        <!--<p>third: <span ng-bind="arr[2]"></span></p>-->
+    <!--</div>-->
+
+
+
+
+    <!--chapter 4-->
+
+
+
+    <!--<div ng-app="" ng-init="first='alex'">-->
+        <!--<p>在输入框中输入： </p>-->
+        <!--<p>姓名：<input type="text" ng-model="first"></p>-->
+        <!--<p>你输入的是： {{first}}</p>-->
+    <!--</div>-->
+
+    <!--<div ng-app="">-->
+        <!--<h2>价格计算器</h2>-->
+        <!--<p>单价: <input type="text" ng-model="price"></p>-->
+        <!--<p>数量：<input type="number" ng-model="number"></p>-->
+
+        <!--<p><b>总价：</b> {{price * number}}</p>-->
+    <!--</div>-->
+
+    <!--<div ng-app="" ng-init="names=[-->
+    <!--{'first':'alex','middle':'wolf','last':'wang'},-->
+    <!--{'first':'john','middle':'joshef','last':'jackson'},-->
+    <!--{'first':'michael','middle':'god','last':'jordan'},-->
+    <!--]">-->
+        <!--<p>使用ng-repeat来循环数组</p>-->
+        <!--<ul>-->
+            <!--<li ng-repeat="x in names">-->
+                <!--{{x.first + ',' + x.middle + ',' + x.last}}-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+    <!--<div class='myD' ></div>-->
+
+
+
+    <!--chapter 5-->
+
+
+    <!--<div ng-app="app" ng-controller="myc">-->
+        <!--<p>name: <input ng-model="n"></p>-->
+        <!--<h1>{{n}}</h1>-->
+    <!--</div>-->
+
+    <!--<form ng-app="app" name="myF">-->
+        <!--email:-->
+        <!--<input type="email" name="myA" ng-model="msg">-->
+        <!--<span ng-show="myF.myA.$error.email">not correct</span>-->
+    <!--</form>-->
+
+    <!--<form ng-app="" name="myForm">-->
+        <!--email: <input type="email" name="myEmail" ng-model="msg" required>-->
+        <!--<h2>status:</h2>-->
+        <!--<p>correct: {{myForm.myEmail.$error.email}}</p>-->
+        <!--<p>valid: {{myForm.myEmail.$valid}}</p>-->
+        <!--<p>empty: {{myForm.myEmail.$dirty}}</p>-->
+        <!--<p>touched: {{myForm.myEmail.$touched}}</p>-->
+    <!--</form>-->
+
+
+
+    <!--chapter 6-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<select>-->
+            <!--<option value="1" ng-repeat="x in names">{{x}}{{ages}}</option>-->
+        <!--</select>-->
+        <!--&lt;!&ndash;<ol>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li ng-repeat="x in ages">{{x}}</li>&ndash;&gt;-->
+        <!--&lt;!&ndash;</ol>&ndash;&gt;-->
+    <!--</div>-->
+
+
+
+    <!--chapter 7-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myc">-->
+        <!--<p>firstname: <input type="text" ng-model="f"></p>-->
+        <!--<p>lastname: <input type="text" ng-model="l"></p>-->
+
+        <!--<p>name : {{f + ' ' + l}}</p>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="mya" ng-controller="myc">-->
+        <!--<p>first: <input type="text" ng-model="first"></p>-->
+        <!--<p>last: <input type="text" ng-model="last"></p>-->
+        <!--<p>name: {{full()}}</p>-->
+        <!--<p>time : {{time()}}</p>-->
+    <!--</div>-->
+
+
+
+    <!--chapter 8-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myc">-->
+        <!--<p>name: {{last | lowercase}}</p>-->
+        <!--<p>first: {{first | uppercase}}</p>-->
+        <!--<p>price: {{price | currency}}</p>-->
+        <!--<ul>-->
+            <!--<li ng-repeat="x in list | orderBy: 'country'">-->
+                <!--{{x.name + ', ' + x.country}}-->
+            <!--</li>-->
+        <!--</ul>-->
+
+        <!--<ul>-->
+            <!--<li ng-repeat="x in names | filter: test">-->
+                <!--{{x}}-->
+            <!--</li>-->
+        <!--</ul>-->
+        <!--<input type="text" ng-model="test">-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myc">-->
+        <!--<table>-->
+            <!--<tr>-->
+                <!--<th ng-click="myorder('name')">name</th>-->
+                <!--<th ng-click="myorder('country')">country</th>-->
+            <!--</tr>-->
+            <!--<tr ng-repeat="x in names | orderBy: haha">-->
+                <!--<td>{{x.name}}</td>-->
+                <!--<td>{{x.country}}</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myc">-->
+        <!--<ul>-->
+            <!--<li ng-repeat="x in names">-->
+                <!--{{x | myfilter}}-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+
+
+    <!--chapter 9-->
+
+
+
+    <script src="js/angular.min.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/angJS-1.js"></script>
+</body>
+</html>
