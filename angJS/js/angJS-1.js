@@ -148,3 +148,104 @@
 //chapter 9
 
 
+//var app = angular.module('myApp',[]);
+//
+//app.controller('myC',function($scope,$location) {
+//    $scope.myUrl = $location.absUrl();
+//})
+
+
+//var app = angular.module('myApp',[]);
+//app.controller('myC',function($scope, $http) {
+//    $http.get('msg.php').then(function(response) {
+//        $scope.myMsg = response.data;
+//    })
+//})
+
+//var app = angular.module('myApp',[]);
+//app.controller('myc',function($scope,$timeout) {
+//    $scope.myMsg = "it's a message!";
+//    $timeout(function() {
+//        $scope.myMsg ='see? it was changed!'
+//    },2000)
+//})
+
+//var app = angular.module('myApp',[]);
+//app.controller('myC',function($scope,$interval) {
+//    $scope.myTime = new Date().toLocaleString();
+//    $interval(function() {
+//        $scope.myTime = new Date().toLocaleString();
+//    },1000)
+//})
+
+//var app = angular.module('myApp',[]);
+//app.service('calculate',function() {
+//    this.numberSquare = function(x) {
+//        return Math.pow(x,2);
+//    }
+//});
+//
+//app.controller('myC',function($scope,calculate) {
+//        $scope.result = calculate.numberSquare(4)
+//
+//})
+
+
+//var app = angular.module('myApp',[]);
+//app.service('cal',function() {
+//    this.myFunc = function(x) {
+//        return Math.pow(x,2)
+//    }
+//});
+//
+//app.filter('myForm',['cal',function(cal) {
+//    return function (x) {
+//        return cal.myFunc(x)
+//    }
+//}]);
+
+//var app = angular.module('myApp',[]);
+//
+//app.service('cal',function() {
+//    this.myFun = function(x) {
+//        return Math.pow(x,2)
+//    }
+//});
+//
+//
+//app.filter('myFilter',['cal',function(cal) {
+//    return function (x) {
+//        return cal.myFun(x);
+//    }
+//}]);
+//
+//
+//app.controller('myC',function($scope) {
+//    $scope.counts = [1,2,3,4,5]
+//})
+
+
+
+//chapter 10
+
+
+//var app = angular.module('myApp',[]);
+//app.controller('myC',function($scope,$http) {
+//    $http.get('msg.json')
+//        .then(function(response) {
+//            $scope.myMsg = response.data.msg
+//        })
+//})
+
+
+var app = angular.module('myApp',[]);
+app.controller('myC',function($scope,$http) {
+    $http.get('wrongname.html')
+        .then(function(response) {
+            $scope.content = response.data;
+            $scope.statusData = response.status;
+            $scope.statusNum = response.statusText;
+        },function(response) {
+            $scope.content = 'wrong !!!'
+        })
+})
