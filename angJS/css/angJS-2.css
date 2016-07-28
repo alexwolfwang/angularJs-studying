@@ -1,0 +1,30 @@
+th, td {
+    border-bottom: 1px solid darkgreen;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #31b0d5;
+}
+
+
+input.ng-invalid {
+    background-color: hotpink;
+}
+
+input.ng-valid {
+    background-color: lawngreen;
+}
+
+input.ng-touched {
+    border: 2px solid #d43f3a;
+}
+
+form.ng-dirty {
+    background-color: #999999;
+}
+
+form.ng-pristine {
+    background-color: #fffc1c;
+}

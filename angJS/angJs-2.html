@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>part-2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/angJS-2.css">
+</head>
+<body>
+
+    <!--chapter 11-->
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<select ng-model="sme" ng-options="x for x in names"></select>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<select ng-model="selectCar">-->
+            <!--<option ng-repeat="x in cars" value="{{x.model}}"> {{x.model}}</option>-->
+        <!--</select>-->
+
+        <!--&lt;!&ndash;<h1>you selected : {{selectCar | myF}}</h1>&ndash;&gt;-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<select ng-model="selectCar" ng-options="x.model for x in cars"></select>-->
+
+        <!--&lt;!&ndash;the ng-model get the data from the select, and give it to others&ndash;&gt;-->
+        <!--<h1>car model: {{selectCar.model}}</h1>-->
+        <!--<h2>car color: {{selectCar.color}}</h2>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<select ng-model="selected" ng-options="x for (x,y) in people"></select>-->
+        <!--<h2>{{selected}}</h2>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<select ng-model="select" ng-options="x for (x,y) in cars"></select>-->
+
+        <!--<h2>{{select.brand}}</h2>-->
+        <!--<h3>{{select.model}}</h3>-->
+        <!--<h4>{{select.color}}</h4>-->
+    <!--</div>-->
+
+
+
+
+    <!--chapter 12-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<table>-->
+            <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th>name</th>-->
+                <!--<th>city</th>-->
+                <!--<th>country</th>-->
+            <!--</tr>-->
+            <!--&lt;!&ndash;<tr ng-repeat="x in myMsg | orderBy:'Country'">&ndash;&gt;-->
+                <!--&lt;!&ndash;<td>{{$index + 1}}</td>&ndash;&gt;-->
+                <!--&lt;!&ndash;<td>{{x.Name}}</td>&ndash;&gt;-->
+                <!--&lt;!&ndash;<td>{{x.City}}</td>&ndash;&gt;-->
+                <!--&lt;!&ndash;<td>{{x.Country | uppercase}}</td>&ndash;&gt;-->
+            <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+            <!--<tr ng-repeat="x in myMsg">-->
+                <!--<td>{{$index + 1}}</td>-->
+                <!--<td ng-if="$odd" style="font-weight: bolder">{{x.Name}}</td>-->
+                <!--<td ng-if="$even">{{x.Name}}</td>-->
+                <!--<td ng-if="$odd" style="font-weight: bolder">{{x.City}}</td>-->
+                <!--<td ng-if="$even">{{x.City}}</td>-->
+                <!--<td ng-if="$odd" style="font-weight: bolder">{{x.Country | uppercase}}</td>-->
+                <!--<td ng-if="$even">{{x.Country | uppercase}}</td>-->
+            <!--</tr>-->
+        <!--</table>-->
+    <!--</div>-->
+
+
+
+    <!--chapter 13 SQL-->
+
+
+    <!--chapter 14-->
+
+
+    <!--<div ng-app="" ng-init="mySwitch = true">-->
+        <!--<button ng-disabled="mySwitch">click</button>-->
+        <!--<p>-->
+            <!--<input type="checkbox" ng-model="mySwitch">-->
+            <!--button-->
+        <!--</p>-->
+        <!--<p>{{mySwitch}}</p>-->
+    <!--</div>-->
+
+    <!--<div ng-app="">-->
+        <!--<p ng-show="true">see</p>-->
+        <!--<p ng-show="faa">not see</p>-->
+        <!--<input type="checkbox" ng-model="faa">-->
+    <!--</div>-->
+
+    <!--<div ng-app="" ng-init="a = 11">-->
+        <!--<p ng-show="a > 8">i am visible</p>-->
+        <!--<p ng-hide="true">i am not visible</p>-->
+        <!--<p ng-hide="false">i am visible 2</p>-->
+    <!--</div>-->
+
+
+
+
+    <!--chapter 15-->
+
+
+    <!--<div ng-app="">-->
+        <!--<button ng-click="co = co + 1">hah</button>-->
+        <!--<p>{{co}}</p>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<button ng-click="toggle()">hide/show</button>-->
+        <!--<div ng-hide="value">-->
+        <!--&lt;!&ndash;<div ng-show="value">&ndash;&gt;-->
+            <!--<p>first name: <input type="text" ng-model="first"></p>-->
+            <!--<p>last name: <input type="text" ng-model="last"></p>-->
+            <!--<p>name: {{first + ' ' + last}}</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-init="count = 2">-->
+        <!--<h1 ng-mousemove="count = count * 3">mouse ove me!!</h1>-->
+        <!--<h2>{{count}}</h2>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<h1 ng-mousemove="myMove($event)">Mouse over me!</h1>-->
+        <!--<p>Coordinates: {{x + ', ' + y}}</p>-->
+    <!--</div>-->
+
+
+
+    <!--chapter 16-->
+
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<form novalidate>-->
+            <!--<p>First Name:</p><br/>-->
+            <!--<input type="text" ng-model="user.first"><br/>-->
+            <!--<p>Last Name:</p><br/>-->
+            <!--<input type="text" ng-model="user.last"><br/>-->
+
+            <!--<button ng-click="reset()">Reset</button>-->
+        <!--</form>-->
+        <!--<p>form = {{user}}</p>-->
+        <!--<p>master = {{master}}</p>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="">-->
+        <!--<form>-->
+            <!--<input type="radio" ng-model="myValue" value="dogs">Dogs-->
+            <!--<input type="radio" ng-model="myValue" value="banana">Banana-->
+            <!--<input type="radio" ng-model="myValue" value="cars">Cars-->
+
+        <!--</form>-->
+
+        <!--<div ng-switch="myValue">-->
+            <!--<div ng-switch-when="dogs">-->
+                <!--<h1>Dogs</h1>-->
+                <!--<p>a lot of dogs</p>-->
+            <!--</div>-->
+            <!--<div ng-switch-when="banana">-->
+                <!--<h1>Banana</h1>-->
+                <!--<p>banana Tree</p>-->
+            <!--</div>-->
+            <!--<div ng-switch-when="cars">-->
+                <!--<h1>Cars</h1>-->
+                <!--<p>Mustang</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="">-->
+        <!--<form>-->
+            <!--<select ng-model="myV">-->
+                <!--<option value=""></option>-->
+                <!--<option value="dogs">Dogs</option>-->
+                <!--<option value="banana">Banana</option>-->
+                <!--<option value="cars">Cars</option>-->
+            <!--</select>-->
+        <!--</form>-->
+
+        <!--<div ng-switch="myV">-->
+            <!--<div ng-switch-when="dogs">-->
+                <!--<h1>Dogs</h1>-->
+                <!--<p>a lot of dogs</p>-->
+            <!--</div>-->
+            <!--<div ng-switch-when="banana">-->
+                <!--<h1>Banana</h1>-->
+                <!--<p>banana Tree</p>-->
+            <!--</div>-->
+            <!--<div ng-switch-when="cars">-->
+            <!--<h1>Cars</h1>-->
+            <!--<p>Mustang</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+    <!--chapter 17-->
+
+
+    <!--<div ng-app="">-->
+        <!--<form name="f" novalidate>-->
+            <!--<input type="text" ng-model="txt" name="t" required>-->
+
+        <!--</form>-->
+        <!--<p>the input's valid state is :</p>-->
+        <!--<h1>{{f.t.$valid}}</h1>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myC">-->
+        <!--<form name="f" novalidate>-->
+            <!--<p>username:</p><br/>-->
+            <!--<input type="text" name="txt" ng-model="name" required>-->
+            <!--<span ng-show="f.txt.$dirty && f.txt.$invalid">-->
+                            <!--<span style="color: red" ng-show="f.txt.$error.required">the name is required</span>-->
+            <!--</span>-->
+
+            <!--<input type="email" name="em" ng-model="email" required>-->
+            <!--<span ng-show="f.em.$invalid && f.em.$dirty">-->
+                <!--<span style="color: yellow" ng-show="f.em.$error.required">the email is required</span>-->
+                 <!--<span style="color: orchid" ng-show="f.em.$error.email">wrong email</span>-->
+            <!--</span>-->
+
+        <!--</form>-->
+        <!--<button ng-disabled="f.txt.$dirty&& f.txt.$invalid || f.em.$dirty&&f.em.$invalid">haha</button>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="">-->
+        <!--<form name="f" novalidate>-->
+            <!--<p>name: <input type="text" name="txt" ng-model="name" required>-->
+                <!--<span ng-show="f.txt.$invalid && f.txt.$touched">name is required</span>-->
+            <!--</p>-->
+            <!--<p>email: <input type="email" name="em" ng-model="email" required>-->
+                <!--<span ng-show="f.em.$invalid && f.em.$touched">email is required</span>-->
+            <!--</p>-->
+        <!--</form>-->
+    <!--</div>-->
+
+
+    <div ng-app="myApp">
+        <p>Try inputing in the input box</p>
+        <form name="f" novalidate>
+            <input name="txt" ng-model="myInput" required my-filter>
+        </form>
+
+        <p>the input's valid state is :</p>
+        <p>{{f.txt.$valid}}</p>
+    </div>
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angJS-2.js"></script>
+</body>
+</html>
