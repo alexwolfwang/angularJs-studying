@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/angJS-3.css">
 </head>
 <body>
+    <!--chapter 18-->
+
 
     <!--<div ng-app="myApp" ng-controller="myC">-->
         <!--<p>{{x}}</p>-->
@@ -16,87 +18,150 @@
         <!--<p>{{p}}</p>-->
     <!--</div>-->
 
-    <div ng-app="myApp" ng-controller="myC" class="container-fluid col-xs-8 col-xs-offset-2">
-        <h3>User</h3>
+    <!--<div ng-app="myApp" ng-controller="myC" class="container-fluid col-xs-8 col-xs-offset-2">-->
+        <!--<h3>User</h3>-->
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Edit</th>
-                    <th>Name</th>
-                    <th>Country</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="user in users">
-                    <td>
-                        <button class="btn btn-primary" ng-click="editUser(user.id)">
-                            <span class="glyphicon glyphicon-pencil"></span>
-                            edit
-                        </button>
-                    </td>
-                    <td>{{user.first}}</td>
-                    <td>{{user.last}}</td>
-                </tr>
-            </tbody>
+        <!--<table class="table table-striped">-->
+            <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>Edit</th>-->
+                    <!--<th>Name</th>-->
+                    <!--<th>Country</th>-->
+                <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+                <!--<tr ng-repeat="user in users">-->
+                    <!--<td>-->
+                        <!--<button class="btn btn-primary" ng-click="editUser(user.id)">-->
+                            <!--<span class="glyphicon glyphicon-pencil"></span>-->
+                            <!--edit-->
+                        <!--</button>-->
+                    <!--</td>-->
+                    <!--<td>{{user.first}}</td>-->
+                    <!--<td>{{user.last}}</td>-->
+                <!--</tr>-->
+            <!--</tbody>-->
 
-        </table>
+        <!--</table>-->
 
-        <button class="btn btn-success" ng-click="editUser('new')">
-            <span class="glyphicon glyphicon-user"></span>
-            create new user
-        </button>
+        <!--<button class="btn btn-success" ng-click="editUser('new')">-->
+            <!--<span class="glyphicon glyphicon-user"></span>-->
+            <!--create new user-->
+        <!--</button>-->
 
-        <form class="form-horizontal" ng-hide="hideForm">
-            <h3 ng-show="edit">Create New User</h3>
-            <h3 ng-hide="edit">Edit User</h3>
+        <!--<form class="form-horizontal" ng-hide="hideForm">-->
+            <!--<h3 ng-show="edit">Create New User</h3>-->
+            <!--<h3 ng-hide="edit">Edit User</h3>-->
 
-            <div class="form-group">
-                <label class="col-xs-2">First name: </label>
-                <input type="text" ng-model="first" ng-disabled="!edit" placeholder="First name">
-            </div>
+            <!--<div class="form-group">-->
+                <!--<label class="col-xs-2">First name: </label>-->
+                <!--<input type="text" ng-model="first" ng-disabled="!edit" placeholder="First name">-->
+            <!--</div>-->
 
-            <div class="form-group">
-                <label class="col-xs-2">Last Name: </label>
-                <input type="text" ng-model="last" ng-disabled="!edit" placeholder="Last name">
-            </div>
+            <!--<div class="form-group">-->
+                <!--<label class="col-xs-2">Last Name: </label>-->
+                <!--<input type="text" ng-model="last" ng-disabled="!edit" placeholder="Last name">-->
+            <!--</div>-->
 
-            <div class="form-group">
-                <label class="col-xs-2">Password: </label>
-                <input type="password" ng-model="password1" placeholder="password">
-            </div>
+            <!--<div class="form-group">-->
+                <!--<label class="col-xs-2">Password: </label>-->
+                <!--<input type="password" ng-model="password1" placeholder="password">-->
+            <!--</div>-->
 
-            <div class="form-group">
-                <label class="col-xs-2">Password: </label>
-                <input type="password" ng-model="password2" placeholder="password">
-            </div>
+            <!--<div class="form-group">-->
+                <!--<label class="col-xs-2">Password: </label>-->
+                <!--<input type="password" ng-model="password2" placeholder="password">-->
+            <!--</div>-->
 
-            <button class="btn btn-success" ng-disabled="error || incomplete">
-                <span class="glyphicon glyphicon-save"></span>
-                Save change
-            </button>
-        </form>
-
-
-    </div>
+            <!--<button class="btn btn-success" ng-disabled="error || incomplete">-->
+                <!--<span class="glyphicon glyphicon-save"></span>-->
+                <!--Save change-->
+            <!--</button>-->
+        <!--</form>-->
 
 
 
+    <!--chapter 19-->
+
+
+    <!--</div>-->
+
+    <!--<div ng-app="myApp" ng-controller="myC" class="container-fluid col-xs-8 col-xs-offset-2">-->
+        <!--<div ng-include="'userTable.html'"></div>-->
+        <!--<div ng-include="'userForm.html'"></div>-->
+    <!--</div>-->
+
+
+    <!--chapter 20-->
+
+
+
+    <!--<div ng-app="myApp">-->
+
+    <!--<h1>Hide the DIV: <input type="checkbox" ng-model="myCheck"></h1>-->
+
+    <!--<div ng-hide="myCheck" class="test"></div>-->
+    <!--</div>-->
+    <!--<div ng-app="myApp">-->
+        <!--<p>Hide div</p>-->
+        <!--<input type="checkbox" ng-model="myCheck">-->
+        <!--<div ng-hide="myCheck" class="test"></div>-->
+    <!--</div>-->
 
 
 
 
 
+    <!--chapter 22-->
+
+
+    <!--<div ng-app="myApp">-->
+
+        <!--<p><a href="#/">Main</a> </p>-->
+        <!--<ul>-->
+            <!--<li><a href="#/red">red</a> </li>-->
+            <!--<li><a href="#/green">green</a> </li>-->
+            <!--<li><a href="#/blue">blue</a> </li>-->
+        <!--</ul>-->
+
+        <!--<div ng-view></div>-->
+    <!--</div>-->
+
+
+    <!--<div ng-app="myApp">-->
+        <!--<p><a href="#/">Main</a> </p>-->
+
+        <!--<ul>-->
+            <!--<li><a href="#apple">Apple</a> </li>-->
+            <!--<li><a href="#banana">Banana</a> </li>-->
+        <!--</ul>-->
+
+
+        <!--<p>Click on the links.</p>-->
+
+        <!--<p>Note that each "view" has its own controller which each gives the "msg" variable a value.</p>-->
+        <!--<div ng-view></div>-->
+    <!--</div>-->
+
+    <!--<div ng-app="myApp">-->
+        <!--<p><a href="#/">Main</a> </p>-->
+
+        <!--<ul>-->
+            <!--<li><a href="#water">water</a> </li>-->
+            <!--<li><a href="#sand">sand</a> </li>-->
+        <!--</ul>-->
+
+        <!--<div ng-view></div>-->
+    <!--</div>-->
 
 
 
-
-
-
-
-<script src="js/jquery-1.11.3.js"></script>
+    <!--chapter 23-->
+    <script src="js/jquery-1.11.3.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
 <script src="js/angJS-3.js"></script>
 </body>
 </html>
