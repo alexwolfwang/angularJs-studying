@@ -1,0 +1,15 @@
+.main {
+    /*text-align: center;*/
+    width: 400px;
+    margin: 0 auto;
+
+}
+ul {
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+}
+li:nth-child(even) {
+    background-color: #999999;
+}

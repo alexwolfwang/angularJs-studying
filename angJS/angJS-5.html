@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/angJS-5.css">
+</head>
+<body>
+    <!--<div class="container">-->
+        <!--<div ng-app="myNoteApp" ng-controller="myNoteController" class="mainerNgJS">-->
+            <!--<h2>My Notebook</h2>-->
+            <!--<textarea ng-model="msg" cols="50" rows="10" placeholder="input message here..."></textarea>-->
+
+            <!--<div class="btn-group-justified">-->
+                <!--<button ng-click="save()">SAVE</button>-->
+                <!--<button ng-click="clear()">CLEAR</button>-->
+            <!--</div>-->
+            <!--<p>Number of characters left: <span ng-bind="left()"></span></p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+    <div class="container">
+        <div ng-app="myShoppingList" ng-controller="mySCtrl" class="main">
+            <ul>
+                <li ng-repeat="x in products">{{x}}<span ng-click="removeItem($index)">X</span> </li>
+            </ul>
+            <input ng-model="addMe">
+            <button ng-click="addItem()">ADD</button>
+            <p>{{errortext}}</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angJS-5.js"></script>
+</body>
+</html>
