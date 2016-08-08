@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="doraemonFact">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/quizApp.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Turtles Facts Quiz</h1>
+            <h3>
+                learn more about all the turtles below before you decide to take on the
+                <strong>TURTLE QUIZ</strong>
+            </h3>
+        </div>
+
+        <!--<div ng-controller="listCtrl.js">-->
+            <!--{{dummyData}}-->
+        <!--</div>-->
+
+        <!--or you can set ng-controller as a object, it can be easy to understand-->
+
+        <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive">
+
+            <form class="form-inline well well-sm clearfix">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" class="form-control" placeholder="search..."
+                ng-model="list.search">
+                <button class="btn btn-warning pull-right" ng-click="list.activeQuiz()"><strong>Start Quiz</strong></button>
+            </form>
+            <div class="row">
+                <div class="col-sm-6" ng-repeat="doraemon in list.data | filter: list.search">
+
+                    <!--here doraemon can be the index of every child part
+                        list.data is related to vm.data, and it's the data of json-->
+
+                    <div class="well well-sm">
+                        <div class="col-md-6">
+                            <img ng-src="{{doraemon.img_url}}" class="img-rounded img-responsive well-img" alt="img">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>{{doraemon.Name}}</h4>
+                            <p><strong>Volume:</strong>{{doraemon.Volume}}</p>
+                            <p><strong>Public:</strong>{{doraemon.Public}}</p>
+                            <button class="btn btn-info pull-right"
+                            data-toggle="modal" data-target="#doraemon-info"
+                            ng-click="list.changeActiveDoraemon(doraemon)">Know more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="doraemon-info">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>{{list.activeDoraemon.Name}}</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <img ng-src="{{list.activeDoraemon.img_url}}"
+                                    class="img-rounded img-responsive">
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>Volume:</strong>{{list.activeDoraemon.Volume}}</p>
+                                    <p><strong>Public:</strong>{{list.activeDoraemon.Public}}</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <p><strong>Plot:</strong></p>
+                                    <p>{{list.activeDoraemon.Plot}}</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-danger pull-right" data-dismiss="modal" >Close</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Progress:</h3>
+                    <div class="btn-toolbar">
+                        <button class="btn btn-danger"
+                                ng-repeat="question in quiz.dataService.quizQuestion">
+                            <span class="glyphicon glyphicon-question-sign"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/listCtrl.js"></script>
+<script src="js/quizCtrl.js"></script>
+<script src="js/factories.js"></script>
+<script src="js/dataService.js"></script>
+</body>
+</html>
