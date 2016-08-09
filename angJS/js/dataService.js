@@ -9,10 +9,13 @@
     function DataFactory() {
         var dataObj = {
             doraemonData: doraemonData,
-            quizQuestion: quizQuestion
+            quizQuestion: quizQuestion,
+            correctAnswer: correctAnswer
         };
         return dataObj;
     }
+
+    var correctAnswer = [1,0,3,2,0,1,1,0,3,1];
 
     var quizQuestion = [
         {
@@ -23,10 +26,10 @@
                     answer: "Nobita at the Birth of Japan"
                 },
                 {
-                    answer: "Nobita Drifts in the Universe"
+                    answer: "Nobita's Dinosaur"
                 },
                 {
-                    answer: "Nobita's Dinosaur"
+                    answer: "Nobita Drifts in the Universe"
                 },
                 {
                     answer: "Nobita and Galactic Express"
@@ -40,13 +43,13 @@
             text: "what is the name of the third long story of Doraemon?",
             possibilities:[
                 {
-                    answer: "Nobita and the Winged Braves"
+                    answer: "Nobita and the Haunts of Evil"
                 },
                 {
                     answer: "Nobita and Fantastic Three Musketeers"
                 },
                 {
-                    answer: "Nobita and the Haunts of Evil"
+                    answer: "Nobita and the Winged Braves"
                 },
                 {
                     answer: "Nobita and Galactic Express"
@@ -66,10 +69,10 @@
                     answer: "imgs/c9.jpg"
                 },
                 {
-                    answer: "imgs/c3.jpg"
+                    answer: "imgs/c21.jpg"
                 },
                 {
-                    answer: "imgs/c21.jpg"
+                    answer: "imgs/c3.jpg"
                 }
             ],
             selected: null,

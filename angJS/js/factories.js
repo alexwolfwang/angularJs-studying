@@ -6,13 +6,16 @@
        .module('doraemonFact')
        .factory('quizMetrics',QuizMetrics);
 
+        QuizMetrics.$inject = ['dataService']
 
-
-        function QuizMetrics() {
+        function QuizMetrics(dataService) {
             var quizObj = {
                 quizActive : false,
                 resultActive : false,
-                changeState : changeState
+                changeState : changeState,
+                correctAnswer: [],
+                markQuiz : markQuiz,
+                numCorrect: 0
             };
 
             return quizObj;
@@ -24,6 +27,21 @@
                     quizObj.resultActive = state;
                 } else {
                     return false;
+                }
+            }
+
+            function markQuiz() {
+                quizObj.correctAnswer = dataService.correctAnswer;
+
+                for(var i = 0 ; i < dataService.quizQuestion.length; i ++) {
+                    if(dataService.quizQuestion[i].selected === quizObj.correctAnswer[i]) {
+                        dataService.quizQuestion[i].correct = true;
+                        quizObj.numCorrect ++;
+                        alert(quizObj.numCorrect);
+                    } else {
+                        dataService.quizQuestion[i].correct = false;
+                        alert(quizObj.numCorrect);
+                    }
                 }
             }
         }
