@@ -31,7 +31,9 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
@@ -49,11 +51,33 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "img",
+            text: "Which picture is the cover page of the third3 long story of Doraemon?",
+            possibilities:[
+                {
+                    answer: "imgs/c1.jpg"
+                },
+                {
+                    answer: "imgs/c9.jpg"
+                },
+                {
+                    answer: "imgs/c3.jpg"
+                },
+                {
+                    answer: "imgs/c21.jpg"
+                }
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third4 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -67,11 +91,13 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third5 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -85,11 +111,13 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third6 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -103,11 +131,13 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third7 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -121,11 +151,13 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third8 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -139,11 +171,13 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third9 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -157,11 +191,13 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
+            ],
+            selected: null,
+            correct: null
         },
         {
             type: "text",
-            text: "what is the name of the third long story of Doraemon?",
+            text: "what is the name of the third10 long story of Doraemon?",
             possibilities:[
                 {
                     answer: "Nobita and the Winged Braves"
@@ -175,25 +211,9 @@
                 {
                     answer: "Nobita and Galactic Express"
                 }
-            ]
-        },
-        {
-            type: "text",
-            text: "what is the name of the third long story of Doraemon?",
-            possibilities:[
-                {
-                    answer: "Nobita and the Winged Braves"
-                },
-                {
-                    answer: "Nobita and Fantastic Three Musketeers"
-                },
-                {
-                    answer: "Nobita and the Haunts of Evil"
-                },
-                {
-                    answer: "Nobita and Galactic Express"
-                }
-            ]
+            ],
+            selected: null,
+            correct: null
         }
     ]
 
