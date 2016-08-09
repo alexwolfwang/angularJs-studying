@@ -131,7 +131,7 @@
             </div>
             <div class="row">
                 <h3>Question: </h3>
-                <div class="well well-sm">
+                <div class="well well-sm" ng-hide="quiz.finalise">
                     <div class="row">
                         <div class="col-xs-12">
                             <h3>{{quiz.activeQuestion+1 + ". " + quiz.dataService.quizQuestion[quiz.activeQuestion].text}}</h3>
@@ -156,7 +156,19 @@
                     </div>
                     <button class="btn btn-warning" ng-click="quiz.questionAnswered()">Continue</button>
                 </div>
+                <div class="well well-sm" ng-show="quiz.finalise">
+                    <div class="row">
+                        <h3>Are you sure you want to submit the answer?</h3>
+                        <button class="btn bg-success" ng-click="quiz.finaliseAnswer()">
+                            <span class="glyphicon glyphicon-send"></span>
+                            Yes</button>
+                        <button class="btn btn-danger" ng-click="quiz.finalise = false">
+                            <span class="glyphicon glyphicon-remove"></span>
+                            No</button>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 

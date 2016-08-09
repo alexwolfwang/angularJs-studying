@@ -33,7 +33,7 @@
         }
 
         function activeQuiz() {
-            quizMetrics.changeState(true);
+            quizMetrics.changeState("quiz",true);
         }
     }
 
