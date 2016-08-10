@@ -23,7 +23,7 @@
 
         <!--or you can set ng-controller as a object, it can be easy to understand-->
 
-        <div class="list" ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive">
+        <div class="list" ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultActive">
 
             <form class="form-inline well well-sm clearfix">
                 <span class="glyphicon glyphicon-search"></span>
@@ -170,6 +170,10 @@
             </div>
 
         </div>
+
+        <div ng-controller="resultCtrl as result" ng-show="result.quizMetrics.resultActive">
+            <h1>hello world</h1>
+        </div>
     </div>
 
 
@@ -192,5 +196,6 @@
 <script src="js/quizCtrl.js"></script>
 <script src="js/factories.js"></script>
 <script src="js/dataService.js"></script>
+<script src="js/resultCtrl.js"></script>
 </body>
 </html>

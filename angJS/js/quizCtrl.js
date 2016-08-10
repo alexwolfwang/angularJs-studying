@@ -75,7 +75,7 @@
                 vm.activeQuestion = 0;
                 quizMetrics.markQuiz();
                 quizMetrics.changeState("quiz",false);
-                quizMetrics.changeState("results",true);
+                quizMetrics.changeState("result",true);
             }
 
 

@@ -23,7 +23,7 @@
             function changeState(metric,state) {
                 if(metric === "quiz") {
                     quizObj.quizActive = state;
-                } else if(metric === "results") {
+                } else if(metric === "result") {
                     quizObj.resultActive = state;
                 } else {
                     return false;
@@ -37,10 +37,10 @@
                     if(dataService.quizQuestion[i].selected === quizObj.correctAnswer[i]) {
                         dataService.quizQuestion[i].correct = true;
                         quizObj.numCorrect ++;
-                        alert(quizObj.numCorrect);
+                        //alert(quizObj.numCorrect);
                     } else {
                         dataService.quizQuestion[i].correct = false;
-                        alert(quizObj.numCorrect);
+                        //alert(quizObj.numCorrect);
                     }
                 }
             }
