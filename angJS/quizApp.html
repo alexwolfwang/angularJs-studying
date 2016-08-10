@@ -157,7 +157,7 @@
                     <button class="btn btn-warning" ng-click="quiz.questionAnswered()">Continue</button>
                 </div>
                 <div class="well well-sm" ng-show="quiz.finalise">
-                    <div class="row">
+                    <div class="row sendQuestion">
                         <h3>Are you sure you want to submit the answer?</h3>
                         <button class="btn bg-success" ng-click="quiz.finaliseAnswer()">
                             <span class="glyphicon glyphicon-send"></span>
@@ -242,6 +242,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <button class="btn btn-primary goBack" ng-click="result.reset()">Go homepage</button>
                         </div>
                     </div>
                 </div>

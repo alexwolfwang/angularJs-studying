@@ -25,6 +25,9 @@
     cursor: pointer;
 }
 
+.sendQuestion {
+    margin-left: 10px;
+}
 .image-answer {
     cursor: pointer;
     width: 100%;
@@ -60,4 +63,8 @@
 .marginTop {
     margin-top: 10px;
 
+}
+
+.goBack{
+    margin-top: 10px;
 }

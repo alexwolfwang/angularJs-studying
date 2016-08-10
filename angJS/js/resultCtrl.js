@@ -15,6 +15,7 @@
             vm.getAnswerClass = getAnswerClass;
             vm.setActiveQuestion = setActiveQuestion;
             vm.calcPerc = calcPerc;
+            vm.reset = reset;
             vm. activeQuestion = 0;
 
             function setActiveQuestion(index) {
@@ -31,6 +32,18 @@
                 } else if(index === dataService.quizQuestion[vm.activeQuestion].selected) {
                     return "bg-danger";
                 }
+            }
+
+
+            function reset() {
+                vm.quizMetrics.changeState("result",false);
+                vm.quizMetrics.numCorrect = 0;
+                for(var i = 0; i < dataService.quizQuestion.length; i ++) {
+                    var data = dataService.quizQuestion[i];
+                    data.correct = null;
+                    data.selected = null;
+                }
+
             }
         }
 
