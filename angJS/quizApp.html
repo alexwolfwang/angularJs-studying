@@ -171,8 +171,71 @@
 
         </div>
 
-        <div ng-controller="resultCtrl as result" ng-show="result.quizMetrics.resultActive">
-            <h1>hello world</h1>
+        <div class="result" ng-controller="resultCtrl as result" ng-show="result.quizMetrics.resultActive">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h2>Result: </h2>
+                    <div class="btn-toolbar">
+                        <button class="btn"
+                                ng-repeat="question in result.dataService.quizQuestion"
+                                ng-class="{'btn-success': question.correct, 'btn-danger' : !question.correct}"
+                                ng-click="result.setActiveQuestion($index)">
+                            <span class="glyphicon"
+                                    ng-class="{'glyphicon-ok':question.correct, 'glyphicon-remove-sign': !question.correct}"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="row">
+                        <h3>Legend: </h3>
+                        <div class="col-sm-4">
+                            <button class="btn btn-success">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                            <p>Correct</p>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove-sign"></span>
+                            </button>
+                            <p>Incorrect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Questions:</h3>
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>{{result.activeQuestion + 1 + '. ' +result.dataService.quizQuestion[result.activeQuestion].text}}</h2>
+
+                            <div class="row" ng-if="result.dataService.quizQuestion[result.activeQuestion].type === 'text'">
+                                <div class="col-sm-6" ng-repeat="answer in result.dataService.quizQuestion[result.activeQuestion].possibilities">
+                                    <div class="answer"
+                                        ng-class="result.getAnswerClass($index)">
+                                        {{answer.answer}};
+                                        <p class="pull-right"
+                                            ng-show="$index !== result.quizMetrics.correctAnswer[result.activeQuestion]
+                                            && $index === result.dataService.quizQuestion[result.activeQuestion].selected">Your Answer</p>
+                                        <p class="pull-right"
+                                            ng-show="$index === result.quizMetrics.correctAnswer[result.activeQuestion]">
+                                            Correct Answer
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="row" ng-if="result.dataService.quizQuestion[result.activeQuestion].type === 'img'">
+                                <div class="col-sm-6" ng-repeat="answer in result.dataService.quizQuestion[result.activeQuestion].possibilities">
+                                    <img ng-src="answer.answer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
