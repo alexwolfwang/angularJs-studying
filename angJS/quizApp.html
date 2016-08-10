@@ -203,6 +203,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>You Score {{result.quizMetrics.numCorrect}} / {{result.dataService.quizQuestion.length}}</h2>
+                    <h2><strong>{{result.calcPerc() | number:2}}%</strong></h2>
+                </div>
+            </div>
             <div class="row">
                 <h3>Questions:</h3>
                 <div class="well well-sm">
@@ -211,17 +218,17 @@
                             <h2>{{result.activeQuestion + 1 + '. ' +result.dataService.quizQuestion[result.activeQuestion].text}}</h2>
 
                             <div class="row" ng-if="result.dataService.quizQuestion[result.activeQuestion].type === 'text'">
-                                <div class="col-sm-6" ng-repeat="answer in result.dataService.quizQuestion[result.activeQuestion].possibilities">
+                                <div  class="col-sm-6 marginTop" ng-repeat="answer in result.dataService.quizQuestion[result.activeQuestion].possibilities">
                                     <div class="answer"
                                         ng-class="result.getAnswerClass($index)">
                                         {{answer.answer}};
-                                        <p class="pull-right"
+                                        <h4 class="pull-right"
                                             ng-show="$index !== result.quizMetrics.correctAnswer[result.activeQuestion]
-                                            && $index === result.dataService.quizQuestion[result.activeQuestion].selected">Your Answer</p>
-                                        <p class="pull-right"
+                                            && $index === result.dataService.quizQuestion[result.activeQuestion].selected">Your Answer</h4>
+                                        <h4 class="pull-right"
                                             ng-show="$index === result.quizMetrics.correctAnswer[result.activeQuestion]">
                                             Correct Answer
-                                        </p>
+                                        </h4>
                                     </div>
 
 
@@ -229,7 +236,10 @@
                             </div>
                             <div class="row" ng-if="result.dataService.quizQuestion[result.activeQuestion].type === 'img'">
                                 <div class="col-sm-6" ng-repeat="answer in result.dataService.quizQuestion[result.activeQuestion].possibilities">
-                                    <img ng-src="answer.answer">
+                                    <div class="image-answer"
+                                        ng-class="result.getAnswerClass($index)">
+                                        <img ng-src="{{answer.answer}}">
+                                    </div>
                                 </div>
                             </div>
                         </div>

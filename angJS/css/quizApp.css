@@ -43,3 +43,21 @@
     border: 4px solid #6de4d3;
     box-shadow: 3px 6px 2px #c2c2c2;
 }
+
+.image-answer.bg-success {
+    border: 4px solid #3bdd68;
+    box-shadow: 3px 6px 2px #c2c2c2;
+}
+
+.image-answer.bg-danger {
+    border: 4px solid #dd484b;
+    box-shadow: 3px 6px 2px #c2c2c2;
+}
+
+.result .answer .pull-right {
+    margin-top: 0;
+}
+.marginTop {
+    margin-top: 10px;
+
+}
