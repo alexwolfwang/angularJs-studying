@@ -38,9 +38,11 @@
                     }
                 } else {
                     vm.activeQuestion = index;
+                    //this is the indexth button clicked
                 }
 
             }
+
 
             function questionAnswered() {
 
@@ -64,6 +66,8 @@
                 }
                 vm.setActiveQuestion();
             }
+
+
 
             function selectAnswer(index) {
                 dataService.quizQuestion[vm.activeQuestion].selected = index;

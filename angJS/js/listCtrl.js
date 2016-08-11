@@ -21,7 +21,6 @@
 
         vm.activeDoraemon = {};
         vm.changeActiveDoraemon = changeActiveDoraemon;
-
         vm.search = "";
 
         vm.activeQuiz = activeQuiz;
@@ -31,6 +30,9 @@
             //the activeDoraemon is gave a refer to the index info to json, so the list.activeDoraemon will change
             //if the changeActiveDoraemon is clicked
         }
+
+
+
 
         function activeQuiz() {
             quizMetrics.changeState("quiz",true);

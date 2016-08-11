@@ -30,6 +30,7 @@
                 }
             }
 
+
             function markQuiz() {
                 quizObj.correctAnswer = dataService.correctAnswer;
 
@@ -44,6 +45,8 @@
                     }
                 }
             }
+
+
         }
 
 
