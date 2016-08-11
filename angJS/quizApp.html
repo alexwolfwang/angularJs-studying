@@ -38,7 +38,7 @@
                     <!--here doraemon can be the index of every child part
                         list.data is related to vm.data, and it's the data of json-->
 
-                    <div class="well well-sm">
+                    <div class="well well-sm story">
                         <div class="col-md-6">
                             <img ng-src="{{doraemon.img_url}}" class="img-rounded img-responsive well-img" alt="img">
                         </div>
@@ -46,6 +46,7 @@
                             <h4>{{doraemon.Name}}</h4>
                             <p><strong>Volume:</strong>{{doraemon.Volume}}</p>
                             <p><strong>Public:</strong>{{doraemon.Public}}</p>
+                            <p><strong>Scene:</strong>{{doraemon.Scene}}</p>
                             <button class="btn btn-info pull-right"
                             data-toggle="modal" data-target="#doraemon-info"
                             ng-click="list.changeActiveDoraemon(doraemon)">Know more</button>
@@ -72,6 +73,7 @@
                                 <div class="col-md-6">
                                     <p><strong>Volume:</strong>{{list.activeDoraemon.Volume}}</p>
                                     <p><strong>Public:</strong>{{list.activeDoraemon.Public}}</p>
+                                    <p><strong>Public:</strong>{{list.activeDoraemon.Scene}}</p>
                                 </div>
                                 <div class="col-xs-12">
                                     <p><strong>Plot:</strong></p>

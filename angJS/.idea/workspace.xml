@@ -25,11 +25,11 @@
         <splitter split-orientation="horizontal" split-proportion="0.79851437">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="quizApp.html" pinned="false" current-in-tab="true">
+              <file leaf-file-name="quizApp.html" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/quizApp.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-0.077892326">
-                      <caret line="220" column="41" selection-start-line="220" selection-start-column="41" selection-end-line="220" selection-end-column="41" />
+                    <state vertical-scroll-proportion="-20.26923">
+                      <caret line="75" column="90" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
                       <folding />
                     </state>
                   </provider>
@@ -47,11 +47,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="dataService.js" pinned="false" current-in-tab="false">
+              <file leaf-file-name="dataService.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/js/dataService.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.0">
-                      <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+                    <state vertical-scroll-proportion="2.342603">
+                      <caret line="359" column="13" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="13" />
                       <folding>
                         <element signature="e#0#41#0" expanded="false" />
                       </folding>
@@ -72,8 +72,8 @@
               <file leaf-file-name="quizApp.css" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/css/quizApp.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-26.807692">
-                      <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+                    <state vertical-scroll-proportion="2.6153846">
+                      <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
                       <folding />
                     </state>
                   </provider>
@@ -160,14 +160,14 @@
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/controller.js" />
-        <option value="$PROJECT_DIR$/js/dataService.js" />
         <option value="$PROJECT_DIR$/js/factories.js" />
         <option value="$PROJECT_DIR$/js/resultCtrl.js" />
-        <option value="$PROJECT_DIR$/css/quizApp.css" />
         <option value="$PROJECT_DIR$/js/listCtrl.js" />
-        <option value="$PROJECT_DIR$/quizApp.html" />
         <option value="$PROJECT_DIR$/js/quizCtrl.js" />
         <option value="$PROJECT_DIR$/js/quizMetrics.js" />
+        <option value="$PROJECT_DIR$/css/quizApp.css" />
+        <option value="$PROJECT_DIR$/quizApp.html" />
+        <option value="$PROJECT_DIR$/js/dataService.js" />
       </list>
     </option>
   </component>
@@ -324,7 +324,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26276988" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -695,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/dataService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/quizMetrics.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7730812">
@@ -712,14 +702,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/quizApp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.807692">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,11 +715,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/quizApp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6153846">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/quizApp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.077892326">
-          <caret line="220" column="41" selection-start-line="220" selection-start-column="41" selection-end-line="220" selection-end-column="41" />
+        <state vertical-scroll-proportion="-20.26923">
+          <caret line="75" column="90" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.342603">
+          <caret line="359" column="13" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
