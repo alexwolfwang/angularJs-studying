@@ -80,16 +80,36 @@
         },
         {
             type: "text",
-            text: "what is the name of the third4 long story of Doraemon?",
+            text: "Who is not the friend of Doraemon?",
             possibilities:[
                 {
-                    answer: "Nobita and the Winged Braves"
+                    answer: "Suneo"
                 },
                 {
-                    answer: "Nobita and Fantastic Three Musketeers"
+                    answer: "Nobita"
+                },
+                {
+                    answer: "Gigazombie"
+                },
+                {
+                    answer: "Shizuka"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "text",
+            text: "Which story Doraemon and friends went to Ancient Arabia?",
+            possibilities:[
+                {
+                    answer: "Nobita in Dorabian Nights"
                 },
                 {
                     answer: "Nobita and the Haunts of Evil"
+                },
+                {
+                    answer: "Nobita's Monstrous Underwater Castle"
                 },
                 {
                     answer: "Nobita and Galactic Express"
@@ -99,20 +119,20 @@
             correct: null
         },
         {
-            type: "text",
-            text: "what is the name of the third5 long story of Doraemon?",
+            type: "img",
+            text: "Which story Nobita became the knight?",
             possibilities:[
                 {
-                    answer: "Nobita and the Winged Braves"
+                    answer: "imgs/c24.jpg"
                 },
                 {
-                    answer: "Nobita and Fantastic Three Musketeers"
+                    answer: "imgs/c14.jpg"
                 },
                 {
-                    answer: "Nobita and the Haunts of Evil"
+                    answer: "imgs/c4.jpg"
                 },
                 {
-                    answer: "Nobita and Galactic Express"
+                    answer: "imgs/c11.jpg"
                 }
             ],
             selected: null,
@@ -120,19 +140,19 @@
         },
         {
             type: "text",
-            text: "what is the name of the third6 long story of Doraemon?",
+            text: "Which is the most ancient Japon time Doraemon and friends back?",
             possibilities:[
                 {
-                    answer: "Nobita and the Winged Braves"
+                    answer: "8 million years ago"
                 },
                 {
-                    answer: "Nobita and Fantastic Three Musketeers"
+                    answer: "seventy thousand years ago"
                 },
                 {
-                    answer: "Nobita and the Haunts of Evil"
+                    answer: "24 biliion years ago"
                 },
                 {
-                    answer: "Nobita and Galactic Express"
+                    answer: "ninety eight thousand years ago"
                 }
             ],
             selected: null,
@@ -140,19 +160,39 @@
         },
         {
             type: "text",
-            text: "what is the name of the third7 long story of Doraemon?",
+            text: "How many time Doraemon and firends weny to space in long stories",
             possibilities:[
                 {
-                    answer: "Nobita and the Winged Braves"
+                    answer: "2 times"
                 },
                 {
-                    answer: "Nobita and Fantastic Three Musketeers"
+                    answer: "3 times"
                 },
                 {
-                    answer: "Nobita and the Haunts of Evil"
+                    answer: "4 times"
                 },
                 {
-                    answer: "Nobita and Galactic Express"
+                    answer: "5 times"
+                }
+            ],
+            selected: null,
+            correct: null
+        },
+        {
+            type: "img",
+            text: "Which story Doraemon and friends fall into sea and it's dangerous",
+            possibilities:[
+                {
+                    answer: "imgs/c19.jpg"
+                },
+                {
+                    answer: "imgs/c16.jpg"
+                },
+                {
+                    answer: "imgs/c23.jpg"
+                },
+                {
+                    answer: "imgs/c11.jpg"
                 }
             ],
             selected: null,
@@ -160,10 +200,10 @@
         },
         {
             type: "text",
-            text: "what is the name of the third8 long story of Doraemon?",
+            text: "Guess which story is my favourite?",
             possibilities:[
                 {
-                    answer: "Nobita and the Winged Braves"
+                    answer: "Nobita in Dorabian Nights"
                 },
                 {
                     answer: "Nobita and Fantastic Three Musketeers"
@@ -172,47 +212,7 @@
                     answer: "Nobita and the Haunts of Evil"
                 },
                 {
-                    answer: "Nobita and Galactic Express"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "what is the name of the third9 long story of Doraemon?",
-            possibilities:[
-                {
-                    answer: "Nobita and the Winged Braves"
-                },
-                {
-                    answer: "Nobita and Fantastic Three Musketeers"
-                },
-                {
-                    answer: "Nobita and the Haunts of Evil"
-                },
-                {
-                    answer: "Nobita and Galactic Express"
-                }
-            ],
-            selected: null,
-            correct: null
-        },
-        {
-            type: "text",
-            text: "what is the name of the third10 long story of Doraemon?",
-            possibilities:[
-                {
-                    answer: "Nobita and the Winged Braves"
-                },
-                {
-                    answer: "Nobita and Fantastic Three Musketeers"
-                },
-                {
-                    answer: "Nobita and the Haunts of Evil"
-                },
-                {
-                    answer: "Nobita and Galactic Express"
+                    answer: "Nobita's Monstrous Underwater Castle"
                 }
             ],
             selected: null,
@@ -364,36 +364,123 @@
             "Volume" : 11,
             "Public" : "1991",
             "Scene": "Ancient Arabia",
-            "img_url": "imgs/c11.jpg"
+            "img_url": "imgs/c11.jpg",
+            "Plot":"Nobita Nobi and Doraemon experience the tale of Sinbad the Sailor of the Arabian Nights fame" +
+            " firsthand using a storybook gadget, but Nobita becomes bored by just watching it from afar. He tries" +
+            " to invite Shizuka Minamoto to enter the storybooks of other tales and accidentally brings Takeshi " +
+            "'Gian' Goda and Suneo Honekawa along. Gian and Suneo mess up the storybooks to create a 'fresh' tale," +
+            " which causes Nobita and Shizuka to experience a mishmash of various tales that Shizuka dislikes. " +
+            "Attempting to leave, she is knocked out by Sinbad's magic carpet and falls into the desert."+
+
+            "The next day, Doraemon realizes that Shizuka has gone missing and stages a rescue mission by going" +
+            " to 8th century Baghdad, during the reign of caliph Harun al-Rashid, after receiving a confirmation" +
+            " from the future that the world of the Arabian Nights does indeed coincide with the 8th century Abbasid" +
+            " Caliphate. Posing as foreign traders and servants, Nobita, Doraemon, Gian, and Suneo are rescued from" +
+            " Cassim and his bandits by the caliph himself, who gives a permit that allows them to travel from the" +
+            " port of Basra. Initially, the four are accompanied by Mikujin, a guide genie, but the latter goes " +
+            "upset when they insult him due to his incompetency and leaves. After purchasing a ship, however, the" +
+            " group are double-crossed by the trader, who reveals himself to be Cassim, and are thrown overboard." +
+
+            "Waking up on the shore of the Arabian Desert, the four are forced to walk through it because Doraemon's" +
+            " pocket is lost during the storm that also crashed Cassim's ship. However, they are rescued by a " +
+            "gigantic genie commandeered by Sinbad, who reigns over a marvelous city in the desert presented by " +
+            "an anonymous time traveler from the future. With his magical gadgets, Sinbad helps the four rescue " +
+            "Shizuka from a bandit named Abdil. Vowing revenge, Abdil meets with Cassim and his two minions to " +
+            "search for the lost city. It is then revealed that Abdil was the only visitor to Sinbad's city who " +
+            "remembers its location, because when Sinbad urged him to drink a memory potion after the visit, he" +
+            " spewed it away."+
+
+            "After arriving, Abdil and Cassim swiftly take the city from Sinbad, whom they expel. Mikujin returns" +
+            " and helps the group with Doraemon's pocket, which he recovered after the storm. The group eventually" +
+            " manage to defeat Abdil and Cassim and retake the city. Despite Sinbad's offer for them to remain by " +
+            "not erasing their memories with the memory potion, Nobita and his friends bid him farewell before " +
+            "returning to the present day."
         },
         {
             "Name" : "Nobita and Fantastic Three Musketeers",
             "Volume" : 14,
             "Public" : "1994",
             "Scene": "Dream world",
-            "img_url": "imgs/c14.jpg"
+            "img_url": "imgs/c14.jpg",
+            "Plot": "Tired of constantly having nightmares, Nobita ask for Doraemon to bring a Dream Machine which " +
+            "would allow Nobita to dream of anything he wants. After an attempt to have a dream about the fall of" +
+            " Atlantis fails, he chooses a dream where he is in a fantasy world with an inspiration from The Three" +
+            " Musketeers.Doraemon disagrees and gives him a lecture which makes Nobita angry and he runs away from" +
+            " home.Doraemon searches him and promises him to let him watch the dream of The Three Musketeers." +
+            " Doraemon sends him to the dream. At the start of the dream he meets a fairy who brings him to a" +
+            " city in the Kingdom of Yumirume under the attack of Emperor Odrome's army. Enemies start firing" +
+            " at Nobita, only to be saved by the fairy. She cuts off the piece of moon, causing Nobita to blow" +
+            " away. When he gets up he finds himself at the forest and one of the Sherogani swordsman namely " +
+            "Suneo makes him his slave.On the way, Nobita helps the baby bear to get out of trap. While moving " +
+            "through the jungle Nobita is attacked by another swordsman Gian. In order to save him Suneo fights" +
+            " with Gian, which he loses and he and Nobita have to retreat. Both of the swordsman move to the inner" +
+            " forest in order to find the Sherogani sword and suit. Both swordsman climb over the sky-touching tree" +
+            " to get the sword but Nobita luckily finds the blasted moon and with its help, he reaches to the top of" +
+            " tree and gets the sword. In this way he becomes another swordsman. At the same time Nobita's mother" +
+            " comes and wakes him. In the school, he found that due to the dream Gian and Suneo are tired."+
+
+            "At night Nobita asks Doraemon to add his friends to his dream. So he puts an antenna to the heads" +
+            " of his sleeping friends. When the dream starts, Nobita get shocked to see Doraemon in his dream too." +
+            "Now Gian and Suneo also become a part of his dream. All the friends moves in forest in order to save" +
+            " the attacked city. Abruptly, they got attacked by a bear, only to be saved by the baby bear who tells" +
+            " the bear that Nobita saved him from the trap. The bear promised the group to take them to cave of dragon."+
+
+            "On the other hand, princess Shizuka disagrees with her father's idea to marry the person who will defeat" +
+            " the evil king. She runs away from the castle, rides over the break which takes her away."+
+
+             "In the forest, the bear leads the group to the cave to dragon, but due to the stream of water Nobita and" +
+            " Doraemon get separated from the other two. Gian and Suneo continue to move. Suddenly the dragon appears" +
+            " and turn them into stones with his fire-breath."+
+
+            "Nobita and Doraemon meet with Shizuka. All of them got covered in sand due to falling of sand.Doraemon " +
+            "suggests that in this form dragon can not identify them. So they move to inner cave of the dragon. Nobita" +
+            " screamed to see Gian and Suneo in stoned form. Dragon hears it and attack Nobita with his fire, but he" +
+            " protect himself with his sword. He cuts the dragon's mustaches with the sword, causing the dragon to" +
+            " faint. When he was at the verge of finishing the dragon, he stops and gets away. All of them agree " +
+            "with Nobita. Dragon regains conscious, he tells Nobita that he does not want to turn any one to stone," +
+            " he just wants to protect himself. He lets them bath in his perspiration which will grant him one more" +
+            " time to live. He also turns Gian and Suneo into normal humans."+
+
+            "Then they move toward the attacked city. The city was empty. They found the army men at the castle." +
+            " All of them plan to destroy the enemy's army by water as they were made of sand. So all of the army" +
+            " men got dissolved in water. The evil king gets furious at that.He decides to fight with Nobita himself." +
+            " So he finishes Nobita one time. The other time he tries to finish him, Nobita and Doraemon get awakened" +
+            " by mother, causing the dream to stop."+
+
+            "Doraemon and Nobita decide to finish the dream. He removes the antenna from all of his friends except" +
+            " for Shizuka who was bathing. At night when Nobita and Doraemon were going to sleep, the fairy from the" +
+            " start of dream came and take them to the dream again. This time still fighting with king. King finishes" +
+            " the Shizuka one time as he does not know that she can regain life one more time. Nobita and king " +
+            "continue to fight each other. Nobita keeps the edge of sword toward the king. At the same time Shizuka" +
+            " uses big light on the sword which moves across the body of evil king, causing him to die. The movie ends" +
+            " with princess Shizuka agreeing to marry with nobita"
         },
         {
             "Name" : "Nobita and Galactic Express",
             "Volume" : 16,
             "Public" : "1996",
             "Scene": "fringe planet",
-
-            "img_url": "imgs/c16.jpg"
+            "img_url": "imgs/c16.jpg",
+            "Plot": "Train, wonderland"
         },
         {
             "Name" : "Nobita Drifts in the Universe",
             "Volume" : 19,
             "Public" : "1999",
             "Scene": "20 light years away from Earth",
-            "img_url": "imgs/c19.jpg"
+            "img_url": "imgs/c19.jpg",
+            "Plot": "The film is the second in the series to parody the original Star Wars trilogy. In the film," +
+            " Doraemon and friends find themselves in an interstellar war where an army (based on the Galactic" +
+            " Empire) is trying to take over Earth. Of course, our heroes joins another army (based on the Rebel" +
+            " Alliance) to stop the antagonists."
         },
         {
             "Name" : "Nobita and the Wind Wizard",
             "Volume" : 23,
             "Public" : "2003",
             "Scene": "Wind village",
-            "img_url": "imgs/c23.jpg"
+            "img_url": "imgs/c23.jpg",
+            "Plot": "wind, monster, right,wrong"
         }
     ]
 })();
